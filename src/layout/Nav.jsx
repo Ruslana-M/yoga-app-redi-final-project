@@ -1,15 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import CalmHubLogo from "../others/CalmHub_logo.png";
 
 function Nav() {
   return (
-    <div className="navbar justify-evenly bg-orange-200 text-primary-content">
-    <div className="flex-1">
-      <a className="btn btn-ghost text-xl">Calm Hub </a>
-    </div>
-    <div className="flex-none">
-      <ul className="menu menu-horizontal px-1">
-        <li><a>Link</a></li>
-        <li>
+    <div className="navbar bg-orange-200 text-primary-content">
+      <Link className="flex-1" to="/">
+        <img className='w-25' src={CalmHubLogo} alt="logo" />
+      </Link>
+      <div className="flex-2">
+        <ul className="menu menu-horizontal px-1">
+          <li>
+            <Link className="bg-[#FD94D1]" to="/login">
+              Get Started
+            </Link>
+          </li>
+          {/* <li>
           <details>
             <summary>
               Login
@@ -19,11 +25,11 @@ function Nav() {
               <li><a>Logout</a></li>
             </ul>
           </details>
-        </li>
-      </ul>
+        </li> */}
+        </ul>
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default Nav
+export default Nav;
