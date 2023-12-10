@@ -8,6 +8,10 @@ import Home from "./layout/Home";
 import Login from "./components/Login";
 import Error from "./components/Error";
 import Register from "./components/Register";
+import Backendless from 'backendless';
+
+Backendless.serverURL = "https://eu-api.backendless.com"
+Backendless.initApp(process.env.REACT_APP_BACKENDLESS_ID, process.env.REACT_APP_BACKENDLESS_KEY);
 
 function App() {
   return (
@@ -18,7 +22,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-
           <Route path="/*" element={<Error />} />
         </Routes>
       </main>
