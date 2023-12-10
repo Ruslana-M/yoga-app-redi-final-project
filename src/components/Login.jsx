@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 
 function Login() {
+  const navigate=useNavigate()
+  function loginUser(e){
+    e.preventDefault()
+    navigate("/TeacherHome")
+
+  }
+  
   return (
     <div className="w-screen h-screen flex justify-center items-center min-h-screen">
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-        <form className="card-body">
+        <form className="card-body" onSubmit={loginUser}>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
