@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Backendless from 'backendless';
+import { useNavigate } from "react-router-dom";
+
 
 function Register() {
     const [showError, setShowError] = useState(false)
-
+    const navigate=useNavigate ()
   function registerUser(e) {
     e.preventDefault();
     const username = e.target.username.value;
@@ -11,10 +13,7 @@ function Register() {
     const password = e.target.password.value;
     const confirmPassword = e.target.confirmPassword.value;
 
-    if (password !== confirmPassword) {
-        setShowError(true)
-        
-    }else {
+
         //creating Object for Backendless
         const newUser = new Backendless.User()
         newUser.email = email
@@ -24,9 +23,11 @@ function Register() {
         //registing
         Backendless.UserService.register(newUser)
             .then((res) => { console.log(res)
+              navigate("/login")
           }).catch(err => { console.log(` Check your password`,  err)
+          setShowError(true)
+
           })
-    }
   }
   return (
     <div className="w-screen h-screen flex justify-center items-center min-h-screen">
