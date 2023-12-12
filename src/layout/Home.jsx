@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="hero bg-base-200 min-h-screen flex flex-col">
       <div className="hero-content text-center overflow-hidden w-full flex flex-col p-4">
-        <h1 className="text-5xl font-bold">Namaste</h1>
+        <h2 className="text-3xl font-bold">Namaste</h2>
         <p className="py-6">
           Yoga practice improves flexibility, increases strength and reduces
           stress. Our app aimed to help you to create your own practice, using a
