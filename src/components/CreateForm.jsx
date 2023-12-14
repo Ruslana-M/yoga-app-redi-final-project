@@ -4,6 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Select from "react-select";
 import dataJson from "../data/data-asana.json";
 
+
+// for react-select  https://react-select.com/home npm i react-select
+// Import the default export and render in your component:  const options = [
+//   { value: 'chocolate', label: 'Chocolate' }], used label htmlFor, 
+
 const asanaOptions = dataJson.asanas.map((item) => {
   return {
     label: item.display_name,
@@ -25,13 +30,7 @@ const levelOptions = [
   { value: "expert", label: "Expert" },
 ];
 
-<select name="label" id="label">
-  <option value="beginner"> Beginner</option>
-  <option value="intermediate"> Intermediate</option>
-  <option value="expert"> Expert</option>
-</select>;
-
-function CreateForm() {
+function CreateForm({setFlowForPreview}) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [level, setLevel] = useState("beginner");
@@ -43,21 +42,31 @@ function CreateForm() {
 
   const navigate = useNavigate();
 
-  <select name="label" id="label">
-    <option value="beginner"> Beginner</option>
-    <option value="intermediate"> Intermediate</option>
-    <option value="expert"> Expert</option>
-  </select>;
-
   function navigateToCreate() {
     navigate("/teacherHome");
   }
-  function navigateToPreview() {
-    navigate("/preview");
-  }
 
   function onSaveYogaFlow() {
-    console.log(); // save to BEL
+    const yogaClass = {
+      title: title,
+      description: description,
+      level: level,
+      pranayamas: pranayamas,
+      warmUps: warmups,
+      asanas: asanas,
+      meditation: meditationFile,
+      savasana: savasanaFile,
+     
+    };
+    Backendless.Data.of("tamplate")
+      .save(yogaClass)
+      .then((res) => {
+        console.log(res + "new contact has been saved");
+        setFlowForPreview(res)
+        navigate(`/preview`);    
+
+      })
+      .catch((err) => console.log(err));
   }
   return (
     <div className="main-container  bg-base-200 min-h-screen pt-2">
@@ -68,48 +77,41 @@ function CreateForm() {
         <ion-icon name="arrow-back-outline"></ion-icon> Back to Create Yoga
         Class
       </button>
-      <div className="flex">
-         {/* container 1 */}
-        <div className="flex flex-col items-end w-1/2">
+      <div className="flex flex-col sm:flex-row">
+        {/* container 1 */}
+        <div className="flex flex-col items-end sm:w-1/2">
           {/* first div*/}
           <div className="w-full p-2">
             <div className=" card flex flex-center justify-between shadow-2xl bg-base-100">
-              <div className="card-body flex flex-col gap-3 p-4 border-zinc-300 ">
-                <div className="flex ">
-                  <label className="label">Title</label>
-                  <input
-                    className=""
-                    type="text"
-                    name="title"
-                    onChange={(e) => setTitle(e.target.value)}
-                  />
-                </div>
+              <div className="card-body grid grid-rows-3 grid-cols-[1fr_3fr] p-4 border-zinc-300 ">
+                <label className="label">Title:</label>
+                <input
+                  className="border border-zinc-300"
+                  type="text"
+                  name="title"
+                  onChange={(e) => setTitle(e.target.value)}
+                />
 
-                <div className="flex ">
-                  <label className="label">Description</label>
-                  <input
-                    className=""
-                    type="text"
-                    name="description"
-                    onChange={(e) => setDescription(e.target.value)}
-                  />
-                </div>
+                <label className="label">Description:</label>
+                <input
+                  className="border border-zinc-300"
+                  type="text"
+                  name="description"
+                  onChange={(e) => setDescription(e.target.value)}
+                />
 
-                {/* level need selector */}
-                <div className="flex ">
-                  <label className="label" htmlFor="levels">
-                    Level :{" "}
-                  </label>
-                  <Select
-                    id="levels"
-                    className="w-3/4"
-                    defaultValue={[]}
-                    isMulti={false}
-                    options={levelOptions}
-                    placeholder="Select Level"
-                    onChange={(opt) => setLevel(opt.value)}
-                  />
-                </div>
+                {/* level needs multiple selector - React selector */}
+                <label className="label" htmlFor="levels">
+                  Level:
+                </label>
+                <Select
+                  id="levels"
+                  defaultValue={[]}
+                  isMulti={false}
+                  options={levelOptions}
+                  placeholder="Select Level"
+                  onChange={(opt) => setLevel(opt.value)}  
+                />
               </div>
             </div>
           </div>
@@ -117,92 +119,91 @@ function CreateForm() {
           {/* second div */}
           <div className="w-full p-2">
             <div className=" card flex flex-center shadow-2xl bg-base-100">
-              <div className="card-body flex flex-col gap-3 p-4 border-zinc-300 ">
-                <div className="flex ">
-                  <label htmlFor="pranayama" className="label">
-                    Pranayamas :
-                  </label>
-                  <Select
-                    id="pranayama"
-                    className="w-3/4"
-                    closeMenuOnSelect={false}
-                    defaultValue={[]}
-                    isMulti
-                    options={pranayamaOptions}
-                    isSearchable={true}
-                    placeholder="Select Pranayamas"
-                    onChange={(opt) => setPranayamas(opt.value)}
-                  />
-                </div>
+              <div className="card-body grid grid-rows-5 grid-cols-[1fr_3fr] p-4 border-zinc-300 ">
+                <label htmlFor="pranayama" className="label">
+                  Pranayamas:
+                </label>
+                {/* // React Select component + map of selected options     
+                onChange={(opt) => setWarmups(opt.value)}  // option is one element of the options array  take one that user click and set it to state variable
+                  onChange={(selectedOptions) => {
+                  const newValue = selectedOptions.map(opt => opt.value)   // map through selectedOptions - are multiple elements of the options array  take all that user clicked and set it to state variable
+                */}
+                <Select
+                  id="pranayama"
+                  closeMenuOnSelect={false}
+                  defaultValue={[]}
+                  isMulti
+                  options={pranayamaOptions}
+                  isSearchable={true}
+                  placeholder="Select Pranayamas"
+                  onChange={(selectedOptions) => {
+                    const newValue = selectedOptions.map(opt => opt.value)
+                    setPranayamas(newValue)
+                  }}
+                />
 
-                <div className="flex ">
-                  <label className="label" htmlFor="warmups">
-                    Warm ups
-                  </label>
-                  <Select
-                    id="warmups"
-                    className="w-3/4"
-                    closeMenuOnSelect={false}
-                    defaultValue={[]}
-                    isMulti
-                    options={asanaOptions}
-                    isSearchable={true}
-                    placeholder="Select Warmups"
-                    onChange={(opt) => setWarmups(opt.value)}
-                  />
-                </div>
+                {/* //  htmlFor  react select  */}
 
-                <div className="flex ">
-                  <label htmlFor="asanas" className="label">
-                    Asanas :
-                  </label>
-                  <Select
-                    id="asanas"
-                    className="w-3/4"
-                    closeMenuOnSelect={false}
-                    defaultValue={[]}
-                    isMulti
-                    options={asanaOptions}
-                    isSearchable={true}
-                    placeholder="Select Asana"
-                    onChange={(opt) => setAsanas(opt.value)}
-                  />
-                </div>
+                <label className="label" htmlFor="warmups">
+                  Warm ups:
+                </label>
+                <Select
+                  id="warmups"
+                  closeMenuOnSelect={false}
+                  defaultValue={[]}
+                  isMulti
+                  options={asanaOptions} // options array
+                  isSearchable={true}
+                  placeholder="Select Warmups"
+                  onChange={(selectedOptions) => {
+                    const newValue = selectedOptions.map(opt => opt.value)
+                    setWarmups(newValue)
+                  }} // map through selectedOptions - are multiple elements of the options array  take all that user clicked and set it to state variable
+                />
 
-                <div className="flex ">
-                  <label className="label">Meditation</label>
-                  <input
-                    type="file"
-                    accept=".mp3"
-                    name="meditation"
-                    onChange={(e) => setMeditationFile(e.target.value)}
-                  />
-                </div>
+                <label htmlFor="asanas" className="label">
+                  Asanas:
+                </label>
+                <Select
+                  id="asanas"
+                  closeMenuOnSelect={false}
+                  defaultValue={[]}
+                  isMulti
+                  options={asanaOptions}
+                  isSearchable={true}
+                  placeholder="Select Asana"
+                  onChange={(selectedOptions) => {
+                    const newValue = selectedOptions.map(opt => opt.value)
+                    setAsanas(newValue)
+                  }}
+                />
+
+                <label className="label">Meditation:</label>
+                <input
+                  type="file"
+                  accept=".mp3"
+                  name="meditation"
+                  onChange={(e) => setMeditationFile(e.target.value)}
+                />
+
                 {/* add audio file */}
-                <div className="flex ">
-                  <label className="label">Savasana</label>
-                  <input
-                    className=""
-                    type="file"
-                    accept=".mp3"
-                    name="savasana"
-                    onChange={(e) => setSavasanaFile(e.target.value)}
-                  />
-                </div>
+
+                <label className="label">Savasana:</label>
+                <input
+                  className=""
+                  type="file"
+                  accept=".mp3"
+                  name="savasana"
+                  onChange={(e) => setSavasanaFile(e.target.value)}
+                />
               </div>
             </div>
           </div>
           {/* ******** */}
-          <button
-            className=" flex  btn btn-secondary btn-md w-40 m-2 border-zinc-300  font-bold"
-            onClick={onSaveYogaFlow}
-          >
-            Save Yoga Flow
-          </button>
         </div>
 
         {/* container 2 */}
-        <div className="flex flex-col w-1/2 p-2 pb-4">
+        <div className="flex flex-col p-2 pb-4 sm:w-1/2">
           <div className="card flex-center shadow-2xl bg-base-100">
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHQ_eO17Knn7E9YUnZSeuaiUp8E_gr0CXnWQ&usqp=CAU"
@@ -214,6 +215,15 @@ function CreateForm() {
             </button>
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center">
+        <button
+          className=" flex  btn btn-secondary btn-md w-40 m-2 border-zinc-300  font-bold "
+          onClick={onSaveYogaFlow}
+        >
+          Save Yoga Flow
+        </button>
       </div>
 
       {/* end****** */}
