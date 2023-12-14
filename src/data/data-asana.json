@@ -67,7 +67,12 @@
       "next_poses": ["Cat Balance"],
       "preferred_side": "right",
       "previous_poses": ["Cat Balance"],
-      "sanskrit_names": null,
+      "sanskrit_names":[
+        {
+          "latin": "biliāsana",
+          "devanagari": "उत्कटासन"
+        }
+      ],
       "sideways": false,
       "sort_name": "Awkward Airplane",
       "subcategory": "neutral",
