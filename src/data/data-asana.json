@@ -55,7 +55,7 @@
       "visibility": "secondary"
     },
     {
-      "id": "3",
+      "id": 3,
       "url": "https://pocketyoga.com/assets/images/full/AwkwardAirplane_L.png",
       "aka": null,
       "benefits": "Strengthens the core and hip mobility.  Improves balance and focus.",
@@ -67,7 +67,7 @@
       "next_poses": ["Cat Balance"],
       "preferred_side": "right",
       "previous_poses": ["Cat Balance"],
-      "sanskrit_names":[
+      "sanskrit_names": [
         {
           "latin": "biliāsana",
           "devanagari": "उत्कटासन"
@@ -185,6 +185,581 @@
         {
           "latin": "ubhaya pādāṅguṣṭhāsana",
           "devanagari": "उभय पादाङ्गुष्ठासन"
+        }
+      ]
+    },
+
+    {
+      "id": 8,
+      "url": "https://pocketyoga.com/assets/images/full/Plow.png",
+      "aka": null,
+      "benefits": "Calms the brain. Stimulates the abdominal organs and the thyroid glands. Stretches the shoulders and spine. Helps relieve the symptoms of menopause. Reduces stress and fatigue. Therapeutic for backache, headache, infertility, insomnia, and sinusitis.",
+      "category": "supine",
+      "description": "From a supine position, the upper back rests on the earth with the hips and legs revolved back over the torso above and beyond the head toward the earth. The torso is perpendicular to the earth. The legs are fully extended with no bend at the knees as the toes reach for the earth. The hands are either supporting the lower back or extended behind the back on the earth with extended elbows and fingers interlaced (as flexibility allows), opening the shoulders. The neck is straight. The chin tucked. Do not look to the side as this may injure the neck",
+      "difficulty": "intermediate",
+      "display_name": "Plow",
+      "name": "Boat Bind Preparation",
+      "next_poses": ["Boat Bind", "Corpse", "Supine Angle"],
+      "preferred_side": null,
+      "previous_poses": ["Corpse", "Supine Angle"],
+      "sanskrit_names": [
+        {
+          "latin": "hālāsana",
+          "devanagari": "हलासन"
+        }
+      ],
+      "sideways": false,
+      "sort_name": "Plow",
+      "subcategory": "neutral",
+      "two_sided": false,
+      "variations": null,
+      "visibility": "tertiary"
+    },
+    {
+      "id": 9,
+      "url": "https://pocketyoga.com/assets/images/full/BoatFull.png",
+      "aka": null,
+      "benefits": "Strengthens the abdomen, hip flexors, and spine.  Stimulates the kidneys, thyroid and prostate glands, and intestines.  Helps relieve stress.  Improves digestion.",
+      "category": "seated",
+      "description": "From a seated position the feet are lifted up so that the thighs are angled about 45-50 degrees relative to the earth.  The legs are straight.  The tailbone is lengthened into the earth and the pubis pulls toward the navel.  The shoulder blades are spread across the back and the hands reach straight forward making the arms are parallel to the earth.  The chin is tipped slightly toward the sternum so that the base of the skull lifts lightly away from the back of the neck.  Gaze is forward.",
+      "difficulty": "intermediate",
+      "display_name": "Boat",
+      "name": "Boat Full",
+      "next_poses": [
+        "Boat Bind",
+        "Boat Bind Outside Edge Half",
+        "Boat Low",
+        "Corpse",
+        "Lift Up"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Boat Bind",
+        "Boat Half",
+        "Boat Low",
+        "Corpse",
+        "Downward Dog",
+        "Lift Up"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "nāvāsana",
+          "devanagari": "नावासन"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": "https://pocketyoga.com/assets/images/full/BoatHalf.png",
+      "aka": null,
+      "benefits": "Strengthens the abdomen, hip flexors and spine.  Stimulates the kidneys, thyroid, prostate glands and intestines.  Helps relieve stress.  Improves digestion.",
+      "category": "seated",
+      "description": "From a seated position the hands are gripped around the back of the legs and the knees are bent in a 90-degree angle.  Both legs are pulled in toward the abdomen.  The core is engaged to maintain balance on the sits bones (be sure that the back does not round).  The front of the torso lengthens between the pubis and top of the sternum as the spine extends in both directions reaching up to the sky and rooting down to the earth.  The gaze is forward and Bandhas are engaged.",
+      "difficulty": "beginner",
+      "display_name": "Half Boat",
+      "name": "Boat Half",
+      "next_poses": ["Boat Full", "Corpse"],
+      "preferred_side": null,
+      "previous_poses": ["Corpse"],
+      "sanskrit_names": [
+        {
+          "latin": "ardha nāvāsana",
+          "devanagari": "अर्ध नावासन"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": "https://pocketyoga.com/assets/images/full/BoatLow.png",
+      "aka": ["Canoe"],
+      "benefits": "Strengthens the abdomen, hamstrings, hip flexors and spine.",
+      "category": "seated",
+      "description": "From a seated position or //Boat Full// pose, lower yourself down to a hover.  Avoid letting your legs or upper back touch the ground.  Keep your belly drawn in.  Both legs are extended and the toes are activated.  The core is engaged to maintain balance on the sit bones.",
+      "difficulty": "beginner",
+      "display_name": "Low Boat",
+      "name": "Boat Low",
+      "next_poses": ["Boat Full", "Turtle Head Tucked"],
+      "preferred_side": null,
+      "previous_poses": ["Boat Full", "Turtle Head Tucked"],
+      "sanskrit_names": [
+        {
+          "latin": "ardha nāvāsana",
+          "devanagari": "अर्ध नावासन"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": "https://pocketyoga.com/assets/images/full/BoundAngle.png",
+      "aka": ["Butterfly", "Cobbler's", "Gracious"],
+      "benefits": "Opens the hips and groins.  Stretches the shoulders, rib cage and back.  Stimulates the abdominal organs, lungs and heart.",
+      "category": "seated",
+      "description": "In sitting position, bend both knees and drop the knees to each side, opening the hips.  Bring the soles of the feet together and bring the heels as close to the groin as possible, keeping the knees close to the ground.  The hands may reach down and grasp and maneuver the feet so that the soles are facing upwards and the heels and little toes are connected.  The shoulders should be pulled back and no rounding of the spine.",
+      "difficulty": "beginner",
+      "display_name": "Bound Angle",
+      "name": "Bound Angle",
+      "next_poses": [
+        "Bound Angle Forward",
+        "Bound Angle II",
+        "Lift Up",
+        "Lift Up Preparation",
+        "Seated"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Bound Angle Forward",
+        "Bound Angle II",
+        "Box Neutral",
+        "Seated"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "baddha koṇāsana",
+          "devanagari": "बद्ध कोणासन"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": "https://pocketyoga.com/assets/images/full/BoundAngleForward.png",
+      "aka": ["Extended Bound Angle", "Folded Butterfly"],
+      "benefits": "Stretches the inner thighs, groins, and knees.",
+      "category": "seated",
+      "description": "Bend both knees and pull your heels toward your pelvis.  Drop your knees out to the sides and press the soles of your feet together.  Bring your heels as close to your pelvis as possible and try to keep the outer edges of the feet firmly on the floor.  If you can, use your hands to open the soles of your feet upward.  Keeping the pose, begin to lengthen your spine up, hinge forward from your hips and keep your sit bones rooted.",
+      "difficulty": "intermediate",
+      "display_name": "Bound Angle I",
+      "name": "Bound Angle Forward",
+      "next_poses": ["Bound Angle"],
+      "preferred_side": null,
+      "previous_poses": ["Bound Angle"],
+      "sanskrit_names": [
+        {
+          "latin": "baddha koṇāsana a",
+          "devanagari": "बद्ध कोणासन अ"
+        }
+      ]
+    },
+
+    {
+      "id": 14,
+      "url": "https://pocketyoga.com/assets/images/full/Bow.png",
+      "aka": null,
+      "benefits": "Stretches the entire front of the body, ankles, thighs and groins, abdomen and chest, and throat, and deep hip flexors (psoas).  Strengthens the back muscles.  Improves posture.  Stimulates the organs of the abdomen and neck.",
+      "category": "prone",
+      "description": "From a prone position with the abdomen on the earth, the hands grip the ankles (but not the tops of the feet) with knees no wider than the width of your hips.  The heels are lifted away from the buttocks and at the same time the thighs are lifted away from the earth working opposing forces as the heart center, hips and back open.  The gaze is forward.",
+      "difficulty": "intermediate",
+      "display_name": "Bow",
+      "name": "Bow",
+      "next_poses": [
+        "Bow Big Toe I",
+        "Bow Preparation",
+        "Bow Side",
+        "Corpse Front"
+      ],
+      "preferred_side": null,
+      "previous_poses": ["Bow Preparation", "Bow Side"],
+      "sanskrit_names": [
+        {
+          "latin": "dhanurāsana",
+          "devanagari": "धनुरासन"
+        }
+      ]
+    },
+
+    {
+      "id": 15,
+      "url": "https://pocketyoga.com/assets/images/full/BowHalf_L.png",
+      "aka": null,
+      "benefits": "Stretches the back muscles and the front body.  Stimulates the abdominal organs and lungs.  Improves balance.",
+      "category": "arm_leg_support",
+      "description": "From //Box Neutral//, extend one arm forward and the opposite leg toward the back, keep the neck in line with the spine.  Bend the top knee and bring the extended hand backwards to catch the foot or toes.  Start to lift the knee and chest higher to create an arch like a bow.",
+      "difficulty": "intermediate",
+      "display_name": "Kneeling Bow",
+      "name": "Bow Half",
+      "next_poses": ["Box Neutral", "Cat Balance"],
+      "preferred_side": "right",
+      "previous_poses": ["Cat Balance"],
+      "sanskrit_names": [
+        {
+          "latin": "vyāghrāsana",
+          "devanagari": "व्याघ्रासन"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "url": "https://pocketyoga.com/assets/images/full/BoxHandToAnkle_L.png",
+      "aka": ["Thread the Needle"],
+      "benefits": "Gently stretches the hips, thighs, and ankles.  Calms the brain and helps relieve stress and fatigue.  Relieves back and neck pain when done with head and torso supported.  Stretches the shoulders.",
+      "category": "arm_leg_support",
+      "description": "From //Box Neutral//, one arm extends under the body and stretches out in a perpendicular direction.  The opposite arm reaches straight forward while the forehead rest softly on the earth in the direction of the extended arm.  The gaze is to the side.",
+      "difficulty": "beginner",
+      "display_name": "Revolved Child's",
+      "name": "Box Hand To Ankle",
+      "next_poses": ["Box Neutral"],
+      "preferred_side": "right",
+      "previous_poses": ["Box Neutral", "Box Twist"],
+      "sanskrit_names": [
+        {
+          "latin": "pārśva bālāsana",
+          "devanagari": "पार्श्व बालासन"
+        }
+      ]
+    },
+
+    {
+      "id": 17,
+      "url": "https://pocketyoga.com/assets/images/full/Bridge.png",
+      "aka": null,
+      "benefits": "Stretches the chest, neck, and spine.  Stimulates abdominal organs, lungs, and thyroids.  Rejuvenates tired legs.  Improves digestion.  Helps relieve the symptoms of menopause.  Relieves menstrual discomfort when done supported.  Reduces anxiety, fatigue, backache, headache, and insomnia.  Therapeutic for asthma, high blood pressure, osteoporosis, and sinusitis.",
+      "category": "supine",
+      "description": "From a supine position, on your back, the hips are pressed up with the heels of the feet rooted into the earth close to the sits bones.  The toes are actively lifted and the pelvis tucked.  The thighs are parallel to the earth and the fingers are interlaced under the body with the ribcage lifted and the heart open.  The back of the neck rests on the earth.  The gaze is to the sky.",
+      "difficulty": "intermediate",
+      "display_name": "Bridge",
+      "name": "Bridge",
+      "next_poses": [
+        "Bridge Leg Up",
+        "Bridge Preparation",
+        "Corpse",
+        "Shoulderstand Supported Bridge",
+        "Wheel"
+      ],
+      "preferred_side": null,
+      "previous_poses": ["Bridge Leg Up", "Bridge Preparation", "Corpse"],
+      "sanskrit_names": [
+        {
+          "latin": "setu bandha sarvāṅgāsana",
+          "devanagari": "सेतु बन्ध सर्वाङ्गासन"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "url": "https://pocketyoga.com/assets/images/full/Camel.png",
+      "aka": null,
+      "benefits": "Stretches the entire front of the body, the ankles, thighs and groins, abdomen and chest, and throat.  Stretches the deep hip flexors (psoas).  Strengthens back muscles.  Improves posture.  Stimulates the organs of the abdomen and neck.",
+      "category": "arm_leg_support",
+      "description": "From a kneeling position the knees are hip width apart and the thighs are perpendicular to the earth.  The inner thighs are narrowed and rotated slightly inward with the buttocks engaged but not hardened.  The tailbone is tucked under but the hips do not puff forward.  The shins and tops of the feet are pressed firmly into the earth.  The ribcage is open, along with the heart center, but the lower front ribs do not protrude sharply toward the sky.  The lower back lifts the ribs away from the pelvis to keep the lower spine as long as possible.  The base of the palms are pressed firmly against the soles (or heels) of the feet and the fingers are pointed toward the toes.  The arms are extended straight and are turned slightly outward at the shoulder joint so the elbow creases face forward without squeezing the shoulder blades together.  The neck is in a relatively neutral position, neither flexed nor extended, or (for the advanced practitioners only) the head drops back.  Be careful not to strain your neck and harden your throat.  The gaze is either toward the sky or toward the earth, depending upon your flexibility.",
+      "difficulty": "intermediate",
+      "display_name": "Camel",
+      "name": "Camel",
+      "next_poses": [
+        "Camel Preparation",
+        "Camel Preparation Hands On Hips",
+        "Hero",
+        "Little Thunderbolt",
+        "Pigeon"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Camel Easy",
+        "Camel Preparation",
+        "Camel Preparation Hands On Hips",
+        "Hero",
+        "Little Thunderbolt",
+        "Pigeon"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "uṣṭrāsana",
+          "devanagari": "उष्ट्रासन"
+        }
+      ]
+    },
+
+    {
+      "id": 19,
+      "url": "https://pocketyoga.com/assets/images/full/PigeonHalf_L.png",
+      "aka": null,
+      "benefits": "Stretches the thighs, groin, psoas, abdomen, chest, shoulders, and neck. Stimulates the abdominal organs. Opens the shoulders and chest.",
+      "category": "prone",
+      "description": "From a lounging position, the hips are parallel and squared to the earth with the front knee bent in a 90-degree angle and flat on the earth. The front foot rests close to the groin. The back leg is extended with the knee and the back foot squared, parallel and pressed firmly into the earth. The ribcage is lifted. The heart is open. Fingers rest on the earth by the side body. The gaze is forward.",
+      "difficulty": "intermediate",
+      "display_name": "Half Pigeon",
+      "sanskrit_names": [
+        {
+          "latin": "Ardha Kapotāsana ",
+          "devanagari": "अर्ध कपोतासन"
+        }
+      ]
+    },
+
+    {
+      "id": 20,
+      "url": "https://pocketyoga.com/assets/images/full/CobraFull.png",
+      "aka": null,
+      "benefits": "Increases spine flexibility.  Stretches the chest and abdominals while strengthening the spine and shoulders.",
+      "category": "prone",
+      "description": "Begin by lying face down with your legs extended behind you, hip-width apart and the tops of your feet rested.  Spread your fingers wide and place your hands under your shoulders with your fingers pointing toward the top of the mat.  Hug your elbows into the sides of your body.  Press down through the tops of your feet and lift your head and chest off the floor.  Keep your lower ribs on the floor.  Draw your shoulders back and your heart forward keeping your head a natural extension of your spine and your shoulders rolled down and away from your ears.  Begin to straighten your arms and lift your chest off the floor.  Press the tops of your thighs down firmly into the floor.  This is //Cobra//.  Little to no weight on your hands.  If your flexibility allows, you can straighten your arms all the way while maintaining the connection of the front of your pelvis and legs with the floor.",
+      "difficulty": "intermediate",
+      "display_name": "Cobra",
+      "name": "Cobra Full",
+      "next_poses": [
+        "Cobra King",
+        "Corpse Front",
+        "Corpse Front Hands Under Shoulders",
+        "Corpse Front Prayer"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Cobra",
+        "Corpse Front Hands Under Shoulders",
+        "Four Limbed Staff"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "bhujaṅgāsana",
+          "devanagari": "भुजङ्गासन"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": "https://pocketyoga.com/assets/images/full/DownwardDogLegUp_L.png",
+      "aka": ["One Legged Downward-Facing Dog", "Tail of the Dog"],
+      "benefits": "Tones and strengthens the standing leg.  Improves flexibility.  Opens the hips.",
+      "category": "arm_leg_support",
+      "description": "From //Downward Dog//, one foot extends up to the sky while the opposite foot is rooted into the earth.  The hips are squared and the toes are active.  The forehead reaches for the earth as the shoulder blades rotate inward.  The gaze is toward the back.",
+      "difficulty": "intermediate",
+      "display_name": "Three Legged Downward-Facing Dog",
+      "name": "Downward Dog Leg Up",
+      "next_poses": ["Chin Stand Single Leg", "Downward Dog", "Lunge"],
+      "preferred_side": "right",
+      "previous_poses": ["Downward Dog", "Downward Dog Knee To Forehead"],
+      "sanskrit_names": [
+        {
+          "latin": "eka pāda adho mukha śvānāsana",
+          "devanagari": "एक पाद अधो मुख श्वानासन"
+        }
+      ]
+    },
+
+    {
+      "id": 22,
+      "url": "https://pocketyoga.com/assets/images/full/Crane.png",
+      "aka": ["Crow with Straight Arms"],
+      "benefits": "Strengthens forearms, wrists, shoulders, upper back and abdominal muscles.",
+      "category": "arm_balance_and_inversion",
+      "description": "Come to a squatting position with both feet together.  Separate your knees but keep your feet together.  Spread your fingers wide and press your palms and fingertips into the mat.  Come up high on your toes and lift your hips as high as possible.  Keeping straight arms, place your knees up into your arm pits, engage your core and begin to hinge forward.  Once your toes lift off the ground, find your balance and pull your heels up close to your sit bones.  Keep your chin lifted and gaze slightly forward on the ground.\\n\\nThis pose is similar to //Crow//, with the exception that the arms are straight and the knees are closer to the armpits.",
+      "difficulty": "intermediate",
+      "display_name": "Crane",
+      "name": "Crane",
+      "next_poses": [
+        "Four Limbed Staff",
+        "Handstand",
+        "Seated On Heels Hands On Mat Opened Knees"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Firefly",
+        "Handstand",
+        "Scale",
+        "Seated On Heels Hands On Mat Opened Knees"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "bakāsana",
+          "devanagari": "बकासन"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "url": "https://pocketyoga.com/assets/images/full/Cat.png",
+      "aka": null,
+      "benefits": "Relieves the spine and neck.  Energizes the body.",
+      "category": "arm_leg_support",
+      "description": "From //Box Neutral//, shift some weight to the palms.  The wrists, elbows and shoulders are in one line.  The abdomen is pulled in and up with the spine arched in a strong Cobra spine.  The crown of the head is toward the earth and the neck is relaxed.  The gaze is between the arms toward the belly.",
+      "difficulty": "beginner",
+      "display_name": "Cat",
+      "name": "Cat",
+      "next_poses": ["Box Neutral", "Dog", "Downward Dog"],
+      "preferred_side": null,
+      "previous_poses": ["Box Neutral", "Dog"],
+      "sanskrit_names": [
+        {
+          "latin": "mārjārīāsana",
+          "devanagari": "मार्जारीआसन"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "url": "https://pocketyoga.com/assets/images/full/Dolphin.png",
+      "aka": ["Turbo Dog"],
+      "benefits": "Calms the brain and helps relieve stress and mild depression.  Energizes the body.  Stretches the shoulders, hamstrings, calves, arches, and hands.  Strengthens the arms and legs.  Helps relieve the symptoms of menopause.  Relieves menstrual discomfort when done with the head supported.  Helps prevent osteoporosis.  Improves digestion.  Relieves headache, insomnia, back pain, and fatigue.  Therapeutic for high blood pressure, asthma, flat feet, sciatica, and sinusitis.  Warms up the ankles and the toes.",
+      "category": "arm_leg_support",
+      "description": "From //Downward Dog//, the forearms are planted onto the earth with the elbows narrow and the palms down in a //Sphinx// position.  The pelvis is tucked.  The ribcage lifted.  The feet are rooted and the legs are straight with the tailbone in dog tilt.  The gaze is down and slightly forward",
+      "difficulty": "intermediate",
+      "display_name": "Dolphin",
+      "name": "Dolphin",
+      "next_poses": [
+        "Dolphin Leg Up",
+        "Dolphin On Toes",
+        "Downward Dog",
+        "Feathered Peacock",
+        "Plank Dolphin",
+        "Splits Wide"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Box Neutral",
+        "Dolphin Leg Up",
+        "Dolphin On Toes",
+        "Downward Dog",
+        "Feathered Peacock",
+        "Plank Dolphin"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "ardha pīñca mayūrāsana",
+          "devanagari": "अर्ध पीञ्च मयूरासन"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "url": "https://pocketyoga.com/assets/images/full/DownwardDog.png",
+      "aka": null,
+      "benefits": "Calms the brain and helps relieve stress and mild depression.  Energizes the body.  Stretches the shoulders, hamstrings, calves, arches, and hands.  Strengthens the arms and legs.  Helps relieve the symptoms of menopause.  Relieves menstrual discomfort when done with the head supported.  Helps prevent osteoporosis.  Improves digestion.  Relieves headache, insomnia, back pain, and fatigue.  Therapeutic for high blood pressure, asthma, flat feet, sciatica, and sinusitis.  Warms up the ankles and the toes.",
+      "category": "arm_leg_support",
+      "description": "The body is positioned in an inverted \\\"V\\\" with the palms and feet rooted into the earth and sits bones lifted up toward the sky.  The arms and legs are straight.  The weight of the body is equally distributed between the hands and the feet.  The eye of the elbows face forward.  The ribcage is lifted and the heart is open.  Shoulders are squared to the earth and rotated back, down and inward.  The neck is relaxed and the crown of the head is toward the earth.  The gaze is down and slightly forward.",
+      "difficulty": "beginner",
+      "display_name": "Downward-Facing Dog",
+      "name": "Downward Dog",
+      "next_poses": [
+        "Dolphin",
+        "Forward Bend Half Way",
+        "Lunge",
+        "Lunge Kneeling",
+        "Plank",
+        "Plank Kneeling",
+        "Upward Dog",
+        "Upward Dog Looking Up",
+        "Warrior I"
+      ],
+      "preferred_side": null,
+      "previous_poses": [
+        "Box Neutral",
+        "Cat",
+        "Dolphin",
+        "Downward Dog Bent Knees"
+      ],
+      "sanskrit_names": [
+        {
+          "latin": "adho mukha śvānāsana",
+          "devanagari": "अधो मुख श्वानासन"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "url": "https://pocketyoga.com/assets/images/full/LungeCrescent_L.png",
+      "aka": null,
+      "benefits": "Creates flexible strength. Promotes stability in the front and back of the torso. Tones the lower body. Stretches the chest, lungs, shoulders, arms, neck, belly, groins (psoas) and the muscles of the back. Strengthens and stretches the thighs, calves and ankles.",
+      "category": "Standing / Balancing",
+      "description": "The front foot of one leg is rooted on the earth with the knee directly above and tracking the ankle in a 90-degree angle. The back leg is straight, no bend in the knee, and the weight is distributed backwards onto the toes as the back heel pushes back and down toward the earth. The inner thighs scissor toward each other and the pelvis is tucked under with the ribcage lifted and the chin slightly tucked. The spine is long and extended. The heart is open. The arms are straight with no bend in the elbows or the wrists. The hands can be together or separated and facing each other with the fingers spread wide. Gaze is natural and forward.",
+      "difficulty": "Intermediate",
+      "display_name": "High Lunge",
+      "sanskrit_names": [
+        {
+          "latin": "Ashta Chandrasana",
+          "devanagari": "अष्ट चन्द्रासन"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "url": "https://pocketyoga.com/assets/images/full/WarriorIIReverse_L.png",
+      "aka": null,
+      "benefits": "Strengthens and stretches the legs, knees, and ankles. Stretches the groin, spine, waist, chest, lungs, and shoulders. Stimulates abdominal organs. Increases stamina. Relieves backaches, especially through second trimester of pregnancy. Therapeutic for carpal tunnel syndrome, flat feet, infertility, osteoporosis, and sciatica.",
+      "category": "Standing / Lateral Bend",
+      "description": "From Warrior II, the lower body stays static while the upper body arches back in a gentle backbend. The top arm is extended back with the bicep by the ear and the fingers spread wide. The other arm slides down the back leg resting on the thigh or shin, but not the knee joint. The gaze is up toward the sky.",
+      "difficulty": "Intermediate",
+      "display_name": "Reverse Warrior",
+      "sanskrit_names": [
+        {
+          "latin": "Viparita Virabhadrasana",
+          "devanagari": "विपरीत वीरभद्रासन"
+        }
+      ]
+    },
+
+    {
+      "id": 28,
+      "url": "https://pocketyoga.com/assets/images/full/WarriorIIForward_L.png",
+      "aka": null,
+      "benefits": "Strengthens and stretches the legs, knees and ankles. Stretches the groin, spine, waist, chest, lungs and shoulders. Stimulates abdominal organs. Increases stamina.",
+      "category": "Standing / Lateral Bend",
+      "description": "From Warrior II, the lower body stays static while the upper body folds forward at the crease of the hip. One arm is extended toward the sky while the other reaches down to the earth. The fingers reach out as the shoulder blades squeeze together. The gaze is toward the sky.",
+      "difficulty": "Intermediate",
+      "display_name": "Side Angle",
+      "sanskrit_names": [
+        {
+          "latin": "Parshvakonasana ",
+          "devanagari": "पार्श्वकोणासन"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "url": "https://pocketyoga.com/assets/images/full/Eagle_R.png",
+      "aka": null,
+      "benefits": "Strengthens and stretches the ankles and calves.  Stretches the thighs, hips, shoulders, and upper back.  Improves concentration.  Improves sense of balance.",
+      "category": "standing",
+      "description": "From a standing position the one thigh is crossed over the other with the toes and/or the ankle hooked behind the lower calf.  The weight of the body is balanced on the standing foot.  The arms are crossed in front of the torso so that one arm is crossed above the other arm.  The top arm is tucked into the elbow crook of the bottom arm.  The hands are hooked around each other as well.  Once hooked, the elbows lift up and the fingers stretch toward the sky.  The gaze is soft and forward.",
+      "difficulty": "intermediate",
+      "display_name": "Eagle",
+      "name": "Eagle",
+      "next_poses": [
+        "Eagle Forward",
+        "Mountain",
+        "Mountain Arms Side",
+        "Warrior III Eagle"
+      ],
+      "preferred_side": "left",
+      "previous_poses": ["Eagle Forward", "Mountain", "Mountain Arms Side"],
+      "sanskrit_names": [
+        {
+          "latin": "garuḍāsana",
+          "devanagari": "गरुडासन"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "url": "https://pocketyoga.com/assets/images/full/DownwardDogHamstring_L.png",
+      "aka": ["Walk the Dog"],
+      "benefits": "Calms the brain and helps relieve stress and mild depression.  Energizes the body.  Stretches the shoulders, hamstrings, calves, arches, and hands.  Strengthens the arms and legs.  Helps relieve the symptoms of menopause.  Relieves menstrual discomfort when done with the head supported.  Helps prevent osteoporosis.  Improves digestion.  Relieves headache, insomnia, back pain, and fatigue.  Therapeutic for high blood pressure, asthma, flat feet, sciatica, and sinusitis.  Warms up the ankles, toes, knees and hamstrings.",
+      "category": "arm_leg_support",
+      "description": "From //Downward Dog//, one knee is bent and one leg is straight with the sits bones tilted up and reaching for the sky.  The arms are straight with the eye of the elbows facing forward.  The palms are flat.  The knuckles are pressed evenly into the earth.  The heels alternatively lift and lower with the weight of the body equally distributed between the hands and the feet.  The ribcage is lifted and the heart is open.  Shoulders are squared, rotated back, down and inward.  The chin is lifted and the gaze is down and slightly forward.",
+      "difficulty": "beginner",
+      "display_name": "Downward-Facing Dog with Hamstring Stretch",
+      "sanskrit_names": [
+        {
+          "latin": "adho mukha śvānāsana",
+          "devanagari": "अधो मुख श्वानासन"
+        }
+      ]
+    },
+
+    {
+      "id": 31,
+      "url": "https://pocketyoga.com/assets/images/full/DownwardDogHandToAnkle_L.png",
+      "aka": null,
+      "benefits": "Calms the brain and helps relieve stress and mild depression.  Energizes the body.  Stretches the shoulders, neck, hamstrings, calves, arches, and hands.  Strengthens the arms and legs.  Helps relieve the symptoms of menopause.  Relieves menstrual discomfort when done with the head supported.  Helps prevent osteoporosis.  Improves digestion.  Relieves headache, insomnia, back pain, and fatigue.  Therapeutic for high blood pressure, asthma, flat feet, sciatica, and sinusitis.",
+      "category": "arm_leg_support",
+      "description": "From //Downward Dog//, the legs are straight with the sits bones tilted up and reaching for the sky.  The feet are flat with the heels firmly rooted.  One palm is flat with the knuckles evenly pressed into the earth.  The other hand reaches under the body and grasps the opposite ankle.  The spine is long and the heart is open toward the sky.  The neck is loose and the crown of the head is toward the earth.  The gaze is toward the center.",
+      "difficulty": "intermediate",
+      "display_name": "Revolved Downward-Facing Dog",
+      "name": "Downward Dog Hand To Ankle",
+      "next_poses": ["Downward Dog"],
+      "preferred_side": "right",
+      "previous_poses": ["Downward Dog"],
+      "sanskrit_names": [
+        {
+          "latin": "parivṛtta adho mukha śvānāsana",
+          "devanagari": "परिवृत्त अधो मुख श्वानासन"
         }
       ]
     }
