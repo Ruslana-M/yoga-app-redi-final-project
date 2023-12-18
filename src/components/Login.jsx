@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Backendless from "backendless";
 
-function Login() {
+function Login({setUser}) {
   const navigate = useNavigate();
+
+// ******  need to be checked
+  const [validLog, setValidLog] = useState("");
+  
+  useEffect(() => {
+    if (validLog == false) {
+      navigate("/login");
+    }
+  }, [validLog]);
+
+  useEffect(() => {
+    IsLoged();
+  }, []);
+
+  function IsLoged() {
+    Backendless.UserService.isValidLogin()
+      .then((res) => {
+        setValidLog(res);
+      })
+      .catch((err) => console.log(err));
+  }
+
   function loginUser(e) {
     e.preventDefault();
 
     const email = e.target.email.value;
     const password = e.target.password.value;
-    
+
     Backendless.UserService.login(email, password, true)
       .then((res) => {
-        console.log(res);
+        setUser(res)
         navigate("/teacherHome");
       })
       .catch((err) => {
