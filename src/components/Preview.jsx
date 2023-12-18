@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import dataJson from "../data/data-asana.json";
 import { useNavigate } from "react-router-dom";
+import mp3 from '../audio.mp3'
 
 //  recieve props
 // set const for array of selected asanas from database
@@ -136,7 +137,7 @@ function Preview({ flowForPreview, setFlowForPreview }) {
           </span>
           {flowForPreview.savasana}
           <audio controls>
-            <source src="good-night-160166.mp3" type="audio/mpeg" />
+            <source src='https://eu-develop.backendless.com/D8C813D1-AE61-B229-FF42-99D74F017600/console/files/view/yoga-audio-files/good-night-160166.mp3' type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
         </p>
