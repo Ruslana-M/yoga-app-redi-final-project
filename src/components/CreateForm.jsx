@@ -5,7 +5,7 @@ import Select from "react-select";
 import dataJson from "../data/data-asana.json";
 
 
-// for react-select  https://react-select.com/home npm i react-select
+// for React-Select  https://react-select.com/home   npm i react-select
 // Import the default export and render in your component:  const options = [
 //   { value: 'chocolate', label: 'Chocolate' }], used label htmlFor, 
 
@@ -42,10 +42,10 @@ function CreateForm({setFlowForPreview}) {
 
   const navigate = useNavigate();
 
-  function navigateToCreate() {
+  function navigateToTeacherHome() {
     navigate("/teacherHome");
   }
-
+// save to BE
   function onSaveYogaFlow() {
     const yogaClass = {
       title: title,
@@ -72,7 +72,7 @@ function CreateForm({setFlowForPreview}) {
     <div className="main-container  bg-base-200 min-h-screen pt-2">
       <button
         className=" flex justify-between btn btn-sm border-zinc-300 text-l ml-3 font-bold"
-        onClick={navigateToCreate}
+        onClick={navigateToTeacherHome}
       >
         <ion-icon name="arrow-back-outline"></ion-icon> Back to Create Yoga
         Class
@@ -119,7 +119,7 @@ function CreateForm({setFlowForPreview}) {
           {/* second div */}
           <div className="w-full p-2">
             <div className=" card flex flex-center shadow-2xl bg-base-100">
-              <div className="card-body grid grid-rows-5 grid-cols-[1fr_3fr] p-4 border-zinc-300 ">
+              <div className="card-body grid grid-rows-5 grid-cols-[1fr_3fr] place-items-center p-4 border-zinc-300 ">
                 <label htmlFor="pranayama" className="label">
                   Pranayamas:
                 </label>
@@ -130,6 +130,7 @@ function CreateForm({setFlowForPreview}) {
                 */}
                 <Select
                   id="pranayama"
+                  className="w-full"
                   closeMenuOnSelect={false}
                   defaultValue={[]}
                   isMulti
@@ -149,6 +150,7 @@ function CreateForm({setFlowForPreview}) {
                 </label>
                 <Select
                   id="warmups"
+                  className="w-full"
                   closeMenuOnSelect={false}
                   defaultValue={[]}
                   isMulti
@@ -166,6 +168,7 @@ function CreateForm({setFlowForPreview}) {
                 </label>
                 <Select
                   id="asanas"
+                  className="w-full"
                   closeMenuOnSelect={false}
                   defaultValue={[]}
                   isMulti
@@ -180,6 +183,7 @@ function CreateForm({setFlowForPreview}) {
 
                 <label className="label">Meditation:</label>
                 <input
+                className="w-full"
                   type="file"
                   accept=".mp3"
                   name="meditation"
@@ -190,11 +194,11 @@ function CreateForm({setFlowForPreview}) {
 
                 <label className="label">Savasana:</label>
                 <input
-                  className=""
+                  className="w-full"
                   type="file"
                   accept=".mp3"
                   name="savasana"
-                  onChange={(e) => setSavasanaFile(e.target.value)}
+                  onChange={(e) => setSavasanaFile(e.target.files[0])}
                 />
               </div>
             </div>
