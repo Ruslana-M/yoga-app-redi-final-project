@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Backendless from 'backendless';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 function Register() {
@@ -110,6 +110,10 @@ function Register() {
           <div className="form-control mt-6">
             <button className="btn btn-secondary">Register</button>
           </div>
+          <p>or</p>
+          <Link className="text-blue-600" to="/login">
+            Login
+          </Link>
         </form>
       </div>   
     </div>
